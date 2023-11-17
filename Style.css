@@ -1,0 +1,47 @@
+
+/* Content Guide
+  1. Body and general styles
+  2. Homepage Header section
+  3. Website Nav bar section
+  4. Homepage Hero section
+  5. Homepage About Us section
+  6. Homepage Call to action section
+  7. Website Footer section
+   */
+
+body {
+font-size:1.6rem;
+background-color: grey;
+}
+h1 h2 h3  {
+    font-size:1rem;
+}
+header {
+    background-image:Images/Grass.jpg;
+    color:white;
+  text-align:center;
+}
+/* nav subsection of header homepage */
+nav {
+    text-align:center;
+}
+ul {
+    font-size:.8rem;
+    display:flex;
+    list-style-type: none
+}
+/* Homepage Hero section */
+.hero-section {
+   
+}
+/* Homepage about section */
+.about {
+   
+}
+/* Homepage cta section */
+.cta {
+    
+}
+footer {
+    
+}
