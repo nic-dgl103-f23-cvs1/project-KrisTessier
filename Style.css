@@ -11,13 +11,17 @@
 
 body {
 font-size:1.6rem;
-background-color: #AF6212;
+background-color:#7D9B64;
+
 }
 header {
+   
    background-image: url("Images/Grass.JPG");
    background-size:cover;
     color:white;
   text-align:center;
+  margin-top:-8%;
+  width:100%;
 }
 /* nav subsection of header homepage */
 nav {
@@ -34,15 +38,35 @@ ul {
 .hero-section {
    color:white;
    margin:auto;
+   /* background-color: #647D9B; */
+   border-radius: 10px;
+   text-align:center;
 }
+.hero-section h2 {
+   background-color: #9B647D;
+   border-radius: 10px; 
+}
+.hero-section a {
+   background-color: #9B647D;
+   border-radius: 10px; 
+   margin-bottom:10%;
+   padding:10px;
+}
+
 /* Homepage about section */
 .about {
    color:white;
+   
+   border-radius: 10px;
 }
 /* Homepage cta section */
 .cta {
-    
+   color:white; 
+   
+   border-radius: 10px;
 }
 footer {
-    
+   color:white;
+   
+   border-radius: 10px;
 }
