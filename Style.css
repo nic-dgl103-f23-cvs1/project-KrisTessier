@@ -12,20 +12,33 @@
 body {
 font-size:1.6rem;
 background-color:#7D9B64;
+text-align:center;
+color:0c1405;
 
 }
+body h3, h2 {
+   border-radius: 10px;
+   font-size:2rem;
+}
+body a {
+ 
+   border-radius: 10px; 
+   margin-bottom:10%;
+   padding:10px;
+}
+
 header {
-   
-   background-image: url("Images/Grass.JPG");
-   background-size:cover;
-    color:white;
   text-align:center;
   margin-top:-8%;
-  width:100%;
+  width:110%;
+  margin-left:-5%;
+  margin-bottom: -8%;
+  height:120%;
 }
 /* nav subsection of header homepage */
 nav {
     text-align:center;
+    display:none;
 }
 ul {
     font-size:.8rem;
@@ -34,39 +47,35 @@ ul {
     gap:50px;
     margin-right:10%;
 }
+/* Bannerimage section for homepage */
+.bannerimage img {
+   background-size:cover;
+   margin-left:-1.4%;
+   height:auto;
+   width:370px; 
+   height:250px;
+   border-radius: 10px;
+
+}
 /* Homepage Hero section */
 .hero-section {
-   color:white;
+    
    margin:auto;
-   /* background-color: #647D9B; */
    border-radius: 10px;
    text-align:center;
 }
-.hero-section h2 {
-   background-color: #9B647D;
+.hero-section h3 {
    border-radius: 10px; 
-}
-.hero-section a {
-   background-color: #9B647D;
-   border-radius: 10px; 
-   margin-bottom:10%;
-   padding:10px;
+   background-image:url("Images/Lifelinelogo.png");
+  
 }
 
 /* Homepage about section */
-.about {
-   color:white;
-   
-   border-radius: 10px;
-}
+
 /* Homepage cta section */
-.cta {
-   color:white; 
-   
+.cta { 
    border-radius: 10px;
 }
 footer {
-   color:white;
-   
    border-radius: 10px;
 }
