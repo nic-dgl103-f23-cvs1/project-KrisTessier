@@ -1,4 +1,3 @@
-
 /* Content Guide
   1. Body and general styles
   2. Homepage Header section
@@ -10,72 +9,71 @@
    */
 
 body {
-font-size:1.6rem;
-background-color:#7D9B64;
-text-align:center;
-color:0c1405;
-
+  font-size: 1.6rem;
+  background-color: #7d9b64;
+  text-align: center;
+  color: 0c1405;
 }
-body h3, h2 {
-   border-radius: 10px;
-   font-size:2rem;
+body 
+h2 {
+  border-radius: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
 }
 body a {
- 
-   border-radius: 10px; 
-   margin-bottom:10%;
-   padding:10px;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 10px;
+  text-decoration: underline;
 }
 
 header {
-  text-align:center;
-  margin-top:-8%;
-  width:110%;
-  margin-left:-5%;
+  text-align: center;
+  margin-top: -8%;
+  width: 110%;
+  margin-left: -5%;
   margin-bottom: -8%;
-  height:120%;
+  height: 120%;
 }
 /* nav subsection of header homepage */
 nav {
-    text-align:center;
-    display:none;
+  text-align: center;
+  display: none;
 }
 ul {
-    font-size:.8rem;
-    display:flex;
-    list-style-type: none;
-    gap:50px;
-    margin-right:10%;
+  font-size: 0.8rem;
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  margin-right: 10%;
 }
 /* Bannerimage section for homepage */
 .bannerimage img {
-   background-size:cover;
-   margin-left:-1.4%;
-   height:auto;
-   width:370px; 
-   height:250px;
-   border-radius: 10px;
-
+  background-size: cover;
+  margin-left: -1.4%;
+  height: auto;
+  width: 370px;
+  height: 250px;
+  border-radius: 10px;
 }
 /* Homepage Hero section */
 .hero-section {
-    
-   margin:auto;
-   border-radius: 10px;
-   text-align:center;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
 }
 .hero-section h3 {
-   border-radius: 10px; 
-   background-image:url("Images/Lifelinelogo.png");
+  border-radius: 10px;
+  background-image: url("Images/Lifelinelogo.png");
+}
+/* Homepage about section */
+.about h2 {
   
 }
-
-/* Homepage about section */
-
 /* Homepage cta section */
-.cta { 
-   border-radius: 10px;
+.cta {
+  border-radius: 10px;
 }
 footer {
-   border-radius: 10px;
+  border-radius: 10px;
 }
