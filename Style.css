@@ -30,7 +30,6 @@ body a {
 header {
   text-align: center;
   margin-top: -8%;
-  width: 110%;
   margin-left: -5%;
   margin-bottom: -8%;
   height: 120%;
@@ -48,7 +47,7 @@ ul {
   margin-right: 10%;
 }
 /* Bannerimage section for homepage */
-.bannerimage img {
+.hero-section img {
   background-size: cover;
   margin-left: -1.4%;
   height: auto;
@@ -62,18 +61,59 @@ ul {
   border-radius: 10px;
   text-align: center;
 }
+/* start of hamburger menu in hero section of homepage */
+/* technical inspiration for html and css code kindly drawn from W3cschools.com */
+ /* will hide the links inside the navigation menu  */
+ .hamburgermenu #myLinks {
+   display: none;
+ }
+ .hamburgermenu a {
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 3rem;
+   display: block;
+ }
+ /* Adds a grey background color on mouse-over */
+ .hamburgermenu a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ .hamburgermenu .icon {
+   color:black;
+ } 
+ /* end of hamburgermenu in hero section of homepage */
 .hero-section h3 {
   border-radius: 10px;
   background-image: url("Images/Lifelinelogo.png");
 }
 /* Homepage about section */
-.about h2 {
-  
+.about img {
+   background-size: cover;
+   margin-left: -1.4%;
+   height: auto;
+   width: 370px;
+   height: 250px;
+   border-radius: 10px; 
 }
 /* Homepage cta section */
 .cta {
   border-radius: 10px;
 }
-footer {
+.cta img {
+   background-size: cover;
+  margin-left: -1.4%;
+  height: auto;
+  width: 370px;
+  height: 250px;
   border-radius: 10px;
+}
+/* footer section for homepage */
+.footernav {
+   display:flex;
+  
+}
+.footernav ul {
+   font-size: 1.2rem;
+   gap:20px;
+   text-decoration: underline;
 }
