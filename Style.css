@@ -121,19 +121,19 @@ header img {
    flex-direction:column;
 }
 /* Sign up form css */
-input[type=text], input[type=password] {
+input[type=text],  input[type=tel]  {
    width: 100%;
-   padding: 15px;
+   padding: 15px 5px;
    margin: 5px 0 22px 0;
    display: inline-block;
    border: none;
    background: #f1f1f1;
- }
- 
- input[type=text]:focus, input[type=password]:focus {
    background-color: #ddd;
    outline: none;
+   text-align:center;
  }
+ 
+ 
  
  hr {
    border: 1px solid #f1f1f1;
@@ -155,19 +155,6 @@ input[type=text], input[type=password] {
  button:hover {
    opacity:1;
  }
- 
- /* Extra styles for the cancel button */
- .cancelbtn {
-   padding: 14px 20px;
-   background-color: #f44336;
- }
- 
- /* Float cancel and signup buttons and add an equal width */
- .cancelbtn, .signupbtn {
-   float: left;
-   width: 50%;
- }
- 
  /* Add padding to container elements */
  .container {
    padding: 16px;
@@ -207,12 +194,16 @@ input[type=text], input[type=password] {
   text-decoration: underline;
   list-style-type: none;
 }
+.disclaimer {
+   font-size:.9rem;
+}
 
 /* desktop version of homepage */
 @media only screen and (min-width: 1200px) {
   body {
     background-color: white;
   }
+  /* header section of homepage */
   header {
     margin: initial;
   }
@@ -224,10 +215,10 @@ input[type=text], input[type=password] {
   header h1 {
     background-color: #c5d5b7;
   }
+  /* hero section of homepage */
   .hero-section {
     margin: auto;
     width: 1170px;
-    background-color: #7d9b64;
     padding-bottom: 2%;
   }
   .hero-section img {
@@ -247,18 +238,32 @@ input[type=text], input[type=password] {
   .about {
     margin: auto;
     width: 1170px;
-    background-color: #7d9b64;
     padding-bottom: 2%;
   }
+  /* home page how it works section */
+  .howitworks {
+   width:1170px;
+   margin:auto;
+  }
+   /* cta homepage signup section */
   .cta {
     margin: auto;
     width: 1170px;
-    background-color: #7d9b64;
     padding-bottom: 2%;
   }
+  .cta img {
+   width:97%;
+   height:100%;
+   }
+  /* sign up homepage section */
+  .signup {
+   width:1170px;
+   margin:auto;
+  }
+  /* footer section of homepage */
   footer {
-    width: 1170px;
-    margin: auto;
-    padding-bottom: 2%;
-  }
+   width: 1170px;
+   margin: auto;
+   padding-bottom: 2%;
+ }
 }
