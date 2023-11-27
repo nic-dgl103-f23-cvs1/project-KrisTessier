@@ -38,22 +38,19 @@ header {
   background-color: #295c94;
   padding: 0 16px;
   color: #ffffff;
-  text-align: center;
-  /* margin-top: -8%;
-  margin-left: -5%;
-  margin-bottom: -8%;
-  height: 120%; */
   display: flex;
-  align-items: top;
+  margin:auto;
   justify-content: space-between;
+  align-items: center;
 }
 header p {
   font-family: "Merriweather", serif;
+  align-self: center;
 }
 
 /* nav subsection of header homepage */
 header nav {
-  text-align: right;
+  
   margin-top: 20px;
   /* display: none; */
 }
