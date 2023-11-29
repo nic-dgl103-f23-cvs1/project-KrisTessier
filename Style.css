@@ -39,14 +39,13 @@ header {
   padding: 0 16px;
   color: #ffffff;
   display: flex;
-  margin:auto;
+  margin: auto;
   justify-content: space-between;
- gap:20px;
+  gap: 20px;
 }
 header p {
   font-family: "Merriweather", serif;
   align-self: center;
- 
 }
 
 /* nav subsection of header homepage */
@@ -88,17 +87,16 @@ header img {
 }
 .hero-section p {
   padding: 20 16px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 /* Homepage about section */
 .about {
   padding: 0 16px;
 }
 .about h2 {
-  text-decoration:none;
-  background-color:#295c94;
-  color:white;
-
+  text-decoration: none;
+  background-color: #295c94;
+  color: white;
 }
 .about img {
   background-size: cover;
@@ -110,60 +108,47 @@ header img {
 }
 .about p {
   padding: 20 16px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 /* how it works section */
 .howitworks {
-   display:flex;
-   flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 /* Sign up form css */
-input[type=text],  input[type=tel]  {
-   width: 100%;
-   padding: 15px 5px;
-   margin: 5px 0 22px 0;
-   display: inline-block;
-   border: none;
-   background: #f1f1f1;
-   background-color: #ddd;
-   outline: none;
-   text-align:center;
- }
- 
- 
- 
- hr {
-   border: 1px solid #f1f1f1;
-   margin-bottom: 25px;
- }
- 
- /* Set a style for all buttons */
- button {
-   background-color: #04AA6D;
-   color: white;
-   padding: 14px 20px;
-   margin: 8px 0;
-   border: none;
-   cursor: pointer;
-   width: 100%;
-   opacity: 0.9;
- }
- 
- button:hover {
-   opacity:1;
- }
- /* Add padding to container elements */
- .container {
-   padding: 16px;
- }
- 
- /* Clear floats */
- .clearfix::after {
-   content: "";
-   clear: both;
-   display: table;
- }
- 
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 15px 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  background-color: #ddd;
+  outline: none;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.button {
+  transition: background-color 0.5s ease;
+  cursor:pointer;
+  background-color: #04AA6D;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 /* Homepage cta section */
 .cta {
   border-radius: 10px;
@@ -177,7 +162,7 @@ input[type=text],  input[type=tel]  {
 }
 .cta p {
   padding: 0 16px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 /* footer section for homepage */
 .footernav {
@@ -192,24 +177,26 @@ input[type=text],  input[type=tel]  {
   list-style-type: none;
 }
 .disclaimer {
-   font-size:.9rem;
+  font-size: 0.9rem;
 }
 /* Service Options page contact form */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  background-color:white;
+  background-color: white;
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -218,7 +205,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -227,6 +214,31 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+/* adds hover animation to signup button */
+.signupbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.signupbtn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.signupbtn:hover span {
+  padding-right: 25px;
+}
+
+.signupbtn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 /* end of service options contact form */
 /* desktop version of homepage, contact and service options pages */
@@ -273,28 +285,28 @@ input[type=submit]:hover {
   }
   /* home page how it works section */
   .howitworks {
-   width:1170px;
-   margin:auto;
+    width: 1170px;
+    margin: auto;
   }
-   /* cta homepage signup section */
+  /* cta homepage signup section */
   .cta {
     margin: auto;
     width: 1170px;
     padding-bottom: 2%;
   }
   .cta img {
-   width:97%;
-   height:100%;
-   }
+    width: 97%;
+    height: 100%;
+  }
   /* sign up homepage section */
   .signup {
-   width:1170px;
-   margin:auto;
+    width: 1170px;
+    margin: auto;
   }
   /* footer section of homepage */
   footer {
-   width: 1170px;
-   margin: auto;
-   padding-bottom: 2%;
- }
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 2%;
+  }
 }
