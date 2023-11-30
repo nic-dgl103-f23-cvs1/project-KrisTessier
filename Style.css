@@ -7,6 +7,11 @@
   6. Homepage How it works section
   7. Homepage Call to action section
   8. Website Footer section
+  9. Service Options page 
+  10. Header section of Service Options page
+  11. Table section of Service Options page
+  12. Footer section of Service Options page
+  13. Contact Us page 
    */
 html {
   font-size: 62.5%;
@@ -180,6 +185,20 @@ hr {
   font-size: 0.9rem;
 }
 /* Service Options page contact form */
+/* Service options hero section */
+.hero-section img {
+  width:auto;
+  height:500px;
+}
+/* end of Service Options hero section */
+/* Service Options Table section */
+ .servicestable {
+  padding:10px;
+}
+.servicestable .tbody {
+  margin-bottom:5%;
+}
+/* end of Service Options Table section */
 input[type="text"],
 select,
 textarea {
@@ -241,6 +260,11 @@ input[type="submit"]:hover {
   right: 0;
 }
 /* end of service options contact form */
+/* Contact us page hero section */
+.herosection img {
+  width:100%;
+  height:400px;
+}
 /* desktop version of homepage, contact and service options pages */
 @media only screen and (min-width: 1200px) {
   body {
