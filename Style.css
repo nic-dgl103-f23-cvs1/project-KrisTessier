@@ -31,6 +31,10 @@ h2,
 h3 {
   font-family: "Merriweather", serif;
 }
+p {
+  padding: 20px 16px;
+  border-radius: 10px;
+}
 img {
   background-size: cover;
   height: auto;
@@ -85,10 +89,6 @@ header nav ul {
   border-radius: 10px;
   background-image: url("Images/Lifelinelogo.png");
 }
-.hero-section p {
-  padding: 20 16px;
-  border-radius: 10px;
-}
 .hero-section video {
   background-size: cover;
   border-radius: 0 0 10px 10px;
@@ -102,10 +102,6 @@ header nav ul {
   text-decoration: none;
   background-color: #295c94;
   color: white;
-}
-.about p {
-  padding: 20 16px;
-  border-radius: 10px;
 }
 /* how it works section */
 .howitworks {
@@ -148,17 +144,13 @@ hr {
 .cta {
   border-radius: 10px;
 }
-.cta p {
-  padding: 0 16px;
-  border-radius: 10px;
-}
 /* footer section for homepage */
 footer {
   text-align: center;
 }
 .footernav {
   display: flex;
-  padding: 0 16px;
+  padding: 0px 16px;
   margin-right: 7%;
 }
 .footernav ul {
@@ -258,7 +250,15 @@ input[type="submit"]:hover {
 .herosection h1 {
   padding: 0px 10px;
 }
-/* desktop version of homepage, contact and service options pages */
+/*
+*
+*
+*
+/* desktop version of homepage, contact us and service options pages
+*
+*
+*
+*/
 @media only screen and (min-width: 1200px) {
   body {
     background-color: white;
@@ -268,9 +268,9 @@ input[type="submit"]:hover {
     margin: initial;
   }
   header p {
-    margin-top:2%;
+    margin-top: 2%;
     margin-left: 5%;
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   header h1 {
@@ -306,7 +306,6 @@ input[type="submit"]:hover {
   /* hero section of homepage */
   .hero-section {
     margin: auto;
-
     padding-bottom: 2%;
   }
   .hero-section video {
